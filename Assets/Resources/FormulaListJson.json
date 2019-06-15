@@ -1,0 +1,14 @@
+﻿{
+    "FormulaList": [
+        {
+            "ItemID": [1],
+            "ItemAmount": [2],
+            "ProductItemID": 2
+        },
+        {
+            "ItemID": [100,300],
+            "ItemAmount": [1,3],
+            "ProductItemID": 102
+        }
+    ]
+}
