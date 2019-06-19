@@ -36,14 +36,20 @@ namespace PackageSys
         }
         public ProductSlot productSlot;
         public Button btnForge;
+        private Button btnFormula;
+        private GameObject FormulaList;
+        bool isDisplay = false;
+        
         public override void Start()
         {
             base.Start();
             slotList = GetComponentsInChildren<ForgeSlot>();
             productSlot = GetComponentInChildren<ProductSlot>();
-
+            btnFormula = transform.Find("btn_Formula").GetComponent<Button>();
+            btnFormula.onClick.AddListener(DisPlayOrHideFormulaList);
             btnForge = transform.Find("btnForge").GetComponent<Button>();
             btnForge.onClick.AddListener(ForgeItem);
+            FormulaList = transform.Find("FormulaPanel").gameObject;
         }
 
         /// <summary>
@@ -116,6 +122,26 @@ namespace PackageSys
 
             //全部需求满足，返回true
             return true;
+        }
+
+        /// <summary>
+        /// 显示或隐藏配方列表
+        /// </summary>
+        private void DisPlayOrHideFormulaList()
+        {
+            if (!isDisplay)
+            {
+                Debug.Log("display");
+                FormulaList.SetActive(true);
+                isDisplay = true;
+            }
+            else
+            {
+                Debug.Log("hide");
+                FormulaList.SetActive(false);
+                isDisplay = false;
+            }
+
         }
     }
 }

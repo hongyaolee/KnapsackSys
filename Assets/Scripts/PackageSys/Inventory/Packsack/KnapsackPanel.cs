@@ -37,23 +37,32 @@ namespace PackageSys
         public override void Start()
         {
             base.Start();
-            for (int i = 0; i < 11; i++)
+            for (int i = 0; i < 99; i++)
             {
                 StoreItem(1);
             }
-            for (int i = 0; i < 11; i++)
+            for (int i = 0; i < 99; i++)
             {
-                StoreItem(2);
+                StoreItem(4);
             }
 
             StoreItem(100);
-            StoreItem(101);
             StoreItem(102);
+            StoreItem(104);
+            StoreItem(105);
             StoreItem(200);
             StoreItem(201);
             StoreItem(202);
-            StoreItem(203);
-            for (int i = 0; i < 101; i++)
+            StoreItem(204);
+            StoreItem(205);
+            StoreItem(210);
+            StoreItem(211);
+            StoreItem(212);
+            StoreItem(213);
+            StoreItem(214);
+            StoreItem(217);
+
+            for (int i = 0; i < 99; i++)
             {
                 StoreItem(300);
             }

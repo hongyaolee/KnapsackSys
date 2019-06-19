@@ -69,6 +69,7 @@ namespace PackageSys
         private Button btn_Forge;
         private Button btn_Save;
         private Button btn_Load;
+        
         private GameObject goPacksack;
         private GameObject goChest;
         private GameObject goCharacter;

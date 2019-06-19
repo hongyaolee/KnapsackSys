@@ -20,16 +20,16 @@ namespace PackageSys
     /// </summary>
     public enum EquipmentType
     {
-        None,
-        Helmet,         //头盔
-        Pendant,        //挂饰
-        Shoulder,       //肩膀
-        Clothes,        //上衣
-        Ring,           //指环
-        Belt,           //腰带
-        Pants,          //裤子
-        Boots,          //靴子
-        OffHand,        //副手
+        None=0,
+        Helmet=1,         //头盔
+        Pendant=2,        //挂饰
+        Shoulder=3,       //肩膀
+        Clothes=4,        //上衣
+        Ring=5,           //指环
+        Belt=6,           //腰带
+        Pants=7,          //裤子
+        Boots=8,          //靴子
+        OffHand=9,        //副手
         
     }
 
